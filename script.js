@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $("#signup-form").validate({
+        rules:{
+            email:{
+                required:true,
+                email:true
+            },
+            pname:{
+                minlength:6
+            }
+        }
+    })
+})
